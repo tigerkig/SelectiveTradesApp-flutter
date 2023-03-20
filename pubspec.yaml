@@ -1,0 +1,84 @@
+name: selective_chat
+
+description: A rewritten version of the original SelectiveTradesChat project 09/11/2021
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 2.0.10+206050
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  candlesticks: ^2.0.1
+  charts_flutter: ^0.12.0
+  connectivity_plus: ^1.1.0
+  cupertino_icons: ^1.0.2
+  crypto: ^3.0.1
+  device_info_plus: ^3.2.3
+  firebase_auth: ^2.0.0
+  firebase_core: ^1.6.0
+  firebase_crashlytics: ^2.5.0
+  firebase_messaging: ^11.1.0
+  firebase_storage: ^10.3.5
+  flutter_chat_ui: ^1.5.8
+  flutter_credit_card: ^3.0.2
+  flutter_image_compress: ^1.1.0
+  flutter_launcher_icons: ^0.9.0
+  flutter_local_notifications: ^9.0.1
+  flutter_stripe: ^4.0.0
+  fluttertoast: ^8.0.8
+  focus_detector: ^2.0.0
+  get_it: ^7.2.0
+  grouped_list: ^4.2.0
+  highlight_text: ^1.3.0
+  http: ^0.13.3
+  image_cropper: ^1.4.1
+  image_picker: ^0.8.4+4
+  intl: ^0.17.0
+  intl_phone_field: ^2.1.0
+  last_state: ^0.1.1
+  open_file: ^3.2.1
+  path_provider: ^2.0.2
+  purchases_flutter: ^3.0.0
+  share_plus: 2.1.0
+  sqflite: ^2.0.0+4
+  url_launcher: ^6.0.8
+  web_socket_channel: ^2.1.0
+  readmore: ^2.2.0
+  upgrader: ^4.6.1
+  flutter:
+    sdk: flutter
+
+dependency_overrides:
+  firebase_core_platform_interface: 4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  image_path: "assets/images/logo.jpeg"
+  ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/symbols/
+  fonts:
+    - family: aventa_regular
+      fonts:
+        - asset: assets/font/aventa_regular.ttf
+    - family: aventa_black
+      fonts:
+        - asset: assets/font/aventa_black.ttf
+    - family: aventa_bold
+      fonts:
+        - asset: assets/font/aventa_bold.ttf
+    - family: aventa_light
+      fonts:
+        - asset: assets/font/aventa_light.ttf
+    - family: archivo_black
+      fonts:
+        - asset: assets/font/archivo_black.ttf

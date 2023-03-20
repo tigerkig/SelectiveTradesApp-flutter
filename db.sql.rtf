@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Helvetica;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f0\fs24\lang9 create database selectivetradesapp;\par
+\par
+use selectivetradesapp;  \par
+\par
+create table live_options (\par
+\tab id integer primary key auto_increment,\par
+\tab tracker varchar(255),\par
+\tab timestamp bigint\par
+); \par
+\par
+create table channels (\par
+\tab id integer  primary key auto_increment,\par
+\tab channel_name varchar(255),\par
+\tab number_of_members integer,\par
+\tab channel_image text,\par
+\tab members text\par
+);  \par
+\par
+insert into channels (channel_name, channel_image) values\par
+('Option Signals', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Option Leap Signals', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Options ( Limited Signals )', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Breakout Stocks', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Educational Ideas', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Crypto Signals', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Results - Option Signals', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Results - Option Leaps', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Results - Option Signals Limited', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Results - Breakout Stocks', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('News Letter', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Updates', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('News', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 '), ('Earnings Calendar', '{{\field{\*\fldinst{HYPERLINK https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36 }}{\fldrslt{https://firebasestorage.googleapis.com/v0/b/selectivetradesapp.appspot.com/o/channel_images%2FResults%20(%20Option%20Signals%20)%2Fprofile_image_1637167994636?alt=media&token=42d3f2b8-243d-47dd-a8fa-cb817dfd2e36\ul0\cf0}}}}\f0\fs24 ')\par
+\par
+create table channel_messages (\par
+\tab id integer primary key auto_increment,\par
+\tab message text,\par
+\tab channel varchar(100),\par
+\tab message_timestamp bigint,\par
+\tab attachment text,\par
+\tab attachment_type varchar(19),\par
+\tab status varchar(20)\par
+);  \par
+\par
+create table edited_channel_messages (\par
+\tab id integer primary key auto_increment,\par
+\tab message text,\par
+\tab channel varchar(100),\par
+\tab message_timestamp bigint,\par
+\tab attachment text,\par
+\tab attachment_type varchar(19),\par
+\tab status varchar(20)\par
+);  \par
+\par
+create table crypto_portfolio (\par
+\tab id integer primary key auto_increment,\par
+\tab symbol varchar(255),\par
+\tab buy_price double,\par
+\tab buy_date varchar(255),\par
+\tab user varchar(255),\par
+\tab quantity double\par
+);\par
+\par
+create table stock_portfolio (\par
+\tab id integer primary key auto_increment,\par
+\tab symbol varchar(255),\par
+\tab buy_price double,\par
+\tab buy_date varchar(255),\par
+\tab user varchar(255),\par
+\tab quantity double\par
+);\par
+\par
+create table crypto_watchlist (\par
+\tab id integer primary key auto_increment,\par
+\tab symbol varchar(100),\par
+\tab buy_date varchar(100),\par
+\tab buy_price double,\par
+\tab user varchar(255)\par
+); \par
+\par
+create table stock_watchlist (\par
+\tab id integer primary key auto_increment,\par
+\tab symbol varchar(100),\par
+\tab buy_date varchar(100),\par
+\tab buy_price double,\par
+\tab user varchar(255)\par
+); \par
+\par
+create table admins (\par
+\tab id integer primary key auto_increment,\par
+\tab username varchar(255),\par
+\tab email varchar(255),\par
+\tab phone_number varchar(255),\par
+\tab date_registered bigint,\par
+\tab firebase_tokens text,\par
+\tab user_password varchar(255),\par
+\tab logged_in varchar(10),\par
+\tab last_login varchar(100),\par
+\tab active varchar(10),\par
+\tab app_version_ios varchar(100),\par
+\tab app_version_android varchar(100),\par
+\tab device varchar(100),\par
+\tab ip_address text,\par
+\tab profile_image_url text,\par
+\tab hash varchar(500)\par
+); \par
+\par
+\par
+create table users (\par
+\tab id integer primary key auto_increment,\par
+\tab username varchar(255),\par
+\tab email varchar(255),\par
+\tab phone_number varchar(255),\par
+\tab date_registered bigint,\par
+\tab expiry_date bigint,\par
+\tab firebase_tokens text,\par
+\tab user_password varchar(255),\par
+\tab logged_in varchar(10),\par
+\tab active varchar(10),\par
+\tab app_version_ios varchar(100),\par
+\tab app_version_android varchar(100),\par
+\tab device varchar(100),\par
+\tab ip_address text,\par
+\tab profile_image_url text,\par
+\tab hash varchar(500)\par
+); \par
+\par
+insert into users (username, email, phone_number, date_registered, expiry_date, firebase_tokens, user_password, logged_in, active, app_version_ios, app_version_android, device, ip_address, profile_image_url, hash) values ('Iphone mobile', 'iphone@gmail.com', '+2340000000001', '1641567632000', '1641567632000', '','qwertyuiop', 'false', 'true', '','','','','','05e4d2e28606e42b979a11d56b97ffb4dd2deacb79b79488d8bc17e69d9e89d2');\par
+\par
+insert into users (username, email, phone_number, date_registered, expiry_date, firebase_tokens, user_password, logged_in, active, app_version_ios, app_version_android, device, ip_address, profile_image_url, hash) values ('Android mobile', 'android@gmail.com', '+2340000000001', '1641567632000', '1641567632000', '','qwertyuiop', 'false', 'true', '','','','','','acc9301134c73772a9ed1fcf7a71437bd62a2c0626dfe5cc5dc311a1cd92154e');\par
+\par
+create table payment_history (\par
+\tab id integer primary key auto_increment,\par
+\tab user_hash varchar(200),\par
+\tab original_user_hash varchar(200),\par
+\tab price double,\par
+\tab price_in_purchased_currency double,\par
+\tab currency varchar(20),\par
+\tab product_id varchar(100),\par
+\tab store varchar(100),\par
+\tab transaction_id varchar(100),\par
+\tab take_home_percent double,\par
+\tab type varchar(100),\par
+\tab purchased_at bigint,\par
+\tab expiration bigint,\par
+\tab country_code varchar(10),\par
+); \par
+\par
+\par
+}
+ 

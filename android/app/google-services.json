@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "142766923001",
+    "project_id": "selectivetradesapp",
+    "storage_bucket": "selectivetradesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142766923001:android:5f88bef07267b74fb59628",
+        "android_client_info": {
+          "package_name": "com.selective_app_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQqh38dkAyeH9ibtdCAiySCs9yrBF9q0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "142766923001-108652r4sj98sg812q2ap9qbh7j36jb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.selectiveAppAdmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142766923001:android:eced8f087b65c266b59628",
+        "android_client_info": {
+          "package_name": "com.selectivetradesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQqh38dkAyeH9ibtdCAiySCs9yrBF9q0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "142766923001-108652r4sj98sg812q2ap9qbh7j36jb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.selectiveAppAdmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142766923001:android:9a18da610357ad22b59628",
+        "android_client_info": {
+          "package_name": "com.selectivetradesllc.selectivechat.selective_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQqh38dkAyeH9ibtdCAiySCs9yrBF9q0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142766923001-qm0pc6vhteq2ccsqrlpbq3ta0f0lbjmk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "142766923001-108652r4sj98sg812q2ap9qbh7j36jb2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.selectiveAppAdmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
